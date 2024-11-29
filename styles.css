@@ -1,0 +1,166 @@
+/* Reset de estilo e fonte amigável para crianças */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0e4d7; /* Fundo suave e acolhedor */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #ffcc00; /* Cor alegre e chamativa */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 5px solid #ff6f00; /* Linha de destaque */
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo para navegação com ícones divertidos */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f00;
+    transform: scale(1.2);
+}
+
+/* Estilo da seção principal */
+main {
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Estilo dos cards */
+#cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #ffeb3b; /* Amarelo vibrante */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #ffcc00;
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #ff6f00; /* Cor de laranja divertida */
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Estilo do resultado */
+#resultado {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 20px;
+    background-color: #c8e6c9; /* Fundo suave verde */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#resultado p {
+    margin: 0;
+}
+
+/* Animação no resultado */
+#resultado.correct {
+    background-color: #81c784; /* Verde claro para respostas corretas */
+    color: #2e7d32;
+}
+
+#resultado.incorrect {
+    background-color: #ff8a80; /* Vermelho suave para respostas erradas */
+    color: #c62828;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffcc00;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajuste da seção do jogo */
+section#jogo {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+

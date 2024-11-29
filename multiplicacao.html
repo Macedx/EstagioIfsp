@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Multiplicação</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="subtracao.html">Subtração</a></li>
+                <li><a href="multiplicacao.html">Multiplicação</a></li>
+                <li><a href="divisao.html">Divisão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>O que é multiplicação?</h2>
+        <p>As 5 propriedades da multiplicação são: comutativa, distributiva, associativa, elemento neutro e elemento inverso.</p>
+        <p>Usamos essas propriedades para facilitar os cálculos. Regra geral, podem ser usadas com números reais e complexos. Ou seja: naturais, inteiros, cálculo algébrico (quando aparecem letras), racionais e irracionais.</p>
+        <h3>Exemplo:</h3>
+        <p>5 x 3 = 15</p>
+
+        <section id="video">
+            <h2>Assista ao vídeo</h2>
+            <p>Confira o vídeo abaixo para entender como funciona o jogo e como você pode jogar!</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dSvQnPtKiVg?start=58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+      
+            <p>Teste seus conhecimentos matemáticos! </p>
+            <section id="jogo">
+                <h2>Jogo de Tabuada</h2>
+                <p>Escolha dois números e digite o resultado da multiplicação!</p>
+            
+                <div id="cards">
+                    <div class="card">
+                        <label for="numeroX">Escolha o número X:</label>
+                        <input type="number" id="numeroX" placeholder="Digite um número X (1-100)" min="1" max="100">
+                    </div>
+                    <div class="card">
+                        <label for="numeroY">Escolha o número Y:</label>
+                        <input type="number" id="numeroY" placeholder="Digite um número Y (1-100)" min="1" max="100">
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <label for="resposta">Qual é o resultado de X * Y?</label>
+                    <input type="number" id="resposta" placeholder="Digite seu resultado">
+                </div>
+            
+                <button onclick="verificarResposta()">Verificar Resposta</button>
+            
+                <div id="resultado"></div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Math Educacional. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

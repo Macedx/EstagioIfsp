@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Soma</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="subtracao.html">Subtração</a></li>
+                <li><a href="multiplicacao.html">Multiplicação</a></li>
+                <li><a href="divisao.html">Divisão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>O que é adição ou soma?</h2>
+        <p>A adição é o ato de juntar elementos, uma das quatro operações básicas da aritmética.</p>
+         <p>    A adição está ligada a ideia de acrescentar. Toda vez que unimos novos elementos ou valores, estamos adicionando.</p>
+
+          <p>  Em Matemática utiliza-se a símbolo + para representar uma adição.</p>
+        <h3>Exemplo:</h3>
+        <p>5 + 3 = 8</p>
+
+        <section id="video">
+            <h2>Aprenda mais sobre soma</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WQSeNLlLjiU?start=28" 
+                title="Vídeo sobre soma no YouTube" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="questoes">
+            <h2>Teste seus conhecimentos</h2>
+            <div id="quiz">
+                <p>Quanto é 7 + 5?</p>
+                <button onclick="verificarResposta(1, 12)">12</button>
+                <button onclick="verificarResposta(1, 13)">13</button>
+                <button onclick="verificarResposta(1, 10)">10</button>
+            </div>
+            <div id="resposta1" class="resposta"></div>
+
+            <div id="quiz2">
+                <p>Quanto é 9 + 6?</p>
+                <button onclick="verificarResposta(2, 16)">16</button>
+                <button onclick="verificarResposta(2, 14)">14</button>
+                <button onclick="verificarResposta(2, 15)">15</button>
+            </div>
+            <div id="resposta2" class="resposta"></div>
+        </section>
+
+        <div id="quiz3">
+            <p>Quanto é 123 + 78?</p>
+            <button onclick="verificarResposta(3, 202)">202</button>
+            <button onclick="verificarResposta(3, 201)">201</button>
+            <button onclick="verificarResposta(3, 200)">200</button>
+        </div>
+        <div id="resposta3" class="resposta"></div>
+
+    
+        <div id="quiz4">
+            <p>Quanto é 567 + 432?</p>
+            <button onclick="verificarResposta(4, 999)">999</button>
+            <button onclick="verificarResposta(4, 1000)">1000</button>
+            <button onclick="verificarResposta(4, 998)">998</button>
+        </div>
+        <div id="resposta4" class="resposta"></div>
+    </section>
+    </main>
+
+    <script>
+       function verificarResposta(questao, resposta) {
+            const respostaCerta = {
+                1: 12,   // Questão 1
+                2: 15,   // Questão 2
+                3: 201,  // Questão 3
+                4: 999,  // Questão 4
+            };
+
+            const resultadoDiv = document.getElementById(`resposta${questao}`);
+            if (resposta === respostaCerta[questao]) {
+                resultadoDiv.innerHTML = '<p style="color: green;">Correto! 🎉</p>';
+            } else {
+                resultadoDiv.innerHTML = '<p style="color: red;">Resposta errada. Tente novamente!</p>';
+            }
+        }
+    </script>
+
+    <br><br><br>
+
+
+    <footer>
+        <p>&copy; 2024 Math Educacional. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

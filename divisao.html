@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Divisão</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="subtracao.html">Subtração</a></li>
+                <li><a href="multiplicacao.html">Multiplicação</a></li>
+                <li><a href="divisao.html">Divisão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>O que é divisão?</h2>
+        <p>A divisão é operação matemática utilizada para descobrir como separar uma quantidade em partes, ou seja, “fracionar” algo.
+        </p>
+        <p>Geralmente, o símbolo utilizado para a operação é dividido por, mas também podemos encontrar casos em que : e / são utilizados como sinal de divisão.</p>
+        <h3>Exemplo:</h3>
+        <p>3 ÷ 1 = 3</p>
+         <p> 4 : 2 = 2</p>  
+           <p>5 / 5 = 1</p>
+    <section id="video">
+        <h2>Aprenda mais sobre divisão</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=61S-Rayhc7c" 
+            title="Vídeo sobre divisão no YouTube" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="questoes">
+        <h2>Teste seus conhecimentos</h2>
+        <div id="quiz">
+            <p>Quanto é 20 ÷ 4?</p>
+       
+            <button onclick="verificarResposta(1, 4)">4</button>
+               <button onclick="verificarResposta(1, 5)">5</button>
+            <button onclick="verificarResposta(1, 6)">6</button>
+        </div>
+        <div id="resposta1" class="resposta"></div>
+
+        <div id="quiz2">
+            <p>Quanto é 45 ÷ 9?</p>
+            <button onclick="verificarResposta(2, 5)">5</button>
+            <button onclick="verificarResposta(2, 4)">4</button>
+            <button onclick="verificarResposta(2, 3)">3</button>
+        </div>
+        <div id="resposta2" class="resposta"></div>
+    </section>
+
+    <div id="quiz3">
+        <p>Quanto é 81 ÷ 9?</p>
+       
+        <button onclick="verificarResposta(3, 8)">8</button>
+        <button onclick="verificarResposta(3, 7)">7</button>
+        <button onclick="verificarResposta(3, 9)">9</button>
+    </div>
+    <div id="resposta3" class="resposta"></div>
+
+    <div id="quiz4">
+        <p>Quanto é 144 ÷ 12?</p>
+      
+        <button onclick="verificarResposta(4, 13)">13</button>
+        <button onclick="verificarResposta(4, 12)">12</button>
+        <button onclick="verificarResposta(4, 14)">14</button>
+    </div>
+    <div id="resposta4" class="resposta"></div>
+</main>
+
+<script>
+   function verificarResposta(questao, resposta) {
+        const respostaCerta = {
+            1: 5,    // Questão 1
+            2: 5,    // Questão 2
+            3: 9,    // Questão 3
+            4: 12,   // Questão 4
+        };
+
+        const resultadoDiv = document.getElementById(`resposta${questao}`);
+        if (resposta === respostaCerta[questao]) {
+            resultadoDiv.innerHTML = '<p style="color: green;">Correto! 🎉</p>';
+        } else {
+            resultadoDiv.innerHTML = '<p style="color: red;">Resposta errada. Tente novamente!</p>';
+        }
+    }
+</script>
+
+<br><br><br>
+
+    <footer>
+        <p>&copy; 2024 Math Educacional. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
