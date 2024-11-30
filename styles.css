@@ -64,8 +64,9 @@ main {
 /* Estilo dos cards */
 #cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 30px;
+    
 }
 
 .card {
@@ -82,6 +83,29 @@ main {
 .card:hover {
     transform: scale(1.1);
     background-color: #ffcc00;
+}
+
+#jogo{
+
+}
+
+#resp {
+    display: flex;   
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    margin-top: 20px; /* Ajuste o espaçamento superior, se necessário */
+}
+
+#cardres {
+    background-color: #ffeb3b; /* Cor já definida */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Largura suficiente para o texto */
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
 
 /* Estilo para o botão */
@@ -155,12 +179,6 @@ footer p {
     margin: 0;
 }
 
-/* Ajuste da seção do jogo */
-section#jogo {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    margin-top: 20px;
-}
+
 
 
